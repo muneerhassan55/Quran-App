@@ -32,3 +32,7 @@ assets/
 flutter pub get
 flutter run
 ```
+
+## License
+
+Released under the [MIT License](LICENSE).
