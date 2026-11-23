@@ -1,16 +1,34 @@
-# quran_app
+# Quran App
 
-A new Flutter project.
+A clean Flutter Quran reader. Browse the Quran by surah, para (juz), hizb or page, and open any surah to read its verses.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Splash screen and tabbed home screen
+- Four ways to browse: **Surah**, **Para**, **Hizb** and **Page**
+- Surah list loaded from a bundled JSON file, so the index works offline
+- Surah detail screen with verses fetched from the [equran.id](https://equran.id) API using Dio
+- Custom fonts with Google Fonts and SVG icons
 
-A few resources to get you started if this is your first Flutter project:
+## Tech stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Flutter · Dart · Dio · Google Fonts · flutter_svg
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project structure
+
+```
+lib/
+  models/    surah, ayat and para models
+  screens/   splash, home and detail screens
+  tabs/      surah, para, hizb and page tabs
+assets/
+  datas/     list-surah.json
+  svgs/      icons
+```
+
+## Getting started
+
+```bash
+flutter pub get
+flutter run
+```
